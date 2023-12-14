@@ -16,3 +16,7 @@ Understand the retail data through the lens of Data Science by exploring the dat
      * Sentiment
      * Emotion
      * Adverse Event detection
+    
+## Citations
+* Nady Inky - Kaggle Dataset Builder
+* Kaggle
