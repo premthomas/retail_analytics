@@ -91,7 +91,7 @@ What is common is that both websites want an understanding of a particular revie
 
 On Amazon, I am allowed to mark a review as "Helpful" but otherwise I am allowed to "Report" the review and provide an optional reason for the report. 
 
-![]()
+![](https://github.com/premthomas/retail_analytics/blob/ca28a68d4dd3a29258bc446cc6a787918d8b73b1/EDA/amazon-review-example2.JPG)
 
 I believe that the "Amazon" design of collecting information on the "helpfulness" of a review is more robust compared to the "Sephora" design, which allows bad actors to push down reviews by marking them as "unhelpful". Considering "Sephora" does host a large collection of brands, a competitor might take advantage of this design flaw.
 
