@@ -83,7 +83,19 @@ Let's take a look at a review on the "Sephora" website and compare it with a rev
 
 <b>Review from the Amazon website</b>
 
+![](https://github.com/premthomas/retail_analytics/blob/f14ecf566edd23826fa602944b8bd174273e931b/EDA/amazon-review-example.JPG)
+
+What is common is that both websites want an understanding of a particular review that was considered "helpful". The difference is that "Sephora" allows unverified users to give their input.
+
 ![]()
+
+On Amazon, I am allowed to mark a review as "Helpful" but otherwise I am allowed to "Report" the review and provide an optional reason for the report. 
+
+![]()
+
+I believe that the "Amazon" design of collecting information on the "helpfulness" of a review is more robust compared to the "Sephora" design, which allows bad actors to push down reviews by marking them as "unhelpful". Considering "Sephora" does host a large collection of brands, a competitor might take advantage of this design flaw.
+
+I might try and analyze this further to see if there is any evidence of review tampering. 
 
 
 
