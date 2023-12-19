@@ -77,7 +77,13 @@ The other interesting titbit we gathered from the heatmap is the relationship be
 
 Let's take a look at a review on the "Sephora" website and compare it with a review on "Amazon".
 
-![](https://github.com/premthomas/retail_analytics/blob/8eb866f0727d4c4174f387d89095b3c82b4b7624/EDA/SweetViz-Associations.JPG)
+<b>Review from the Sephora website</b>
+
+![](https://github.com/premthomas/retail_analytics/blob/097d84ddbf9bac36f46d1a46600c0e8efe010909/EDA/sephora-review-example2.JPG)
+
+<b>Review from the Amazon website</b>
+
+![]()
 
 
 
