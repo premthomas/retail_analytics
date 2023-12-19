@@ -1,8 +1,8 @@
 # Exploratory Data Analysis (EDA)
 You must understand the data before you start exploring it. I am skipping the details in the more obvious methods but will highlight them as a reminder of the functions that need to be done before exploring the data using Python. The data we will be working with is presented to us in the CSV format. 
 
-1. Go through any write-up about the data. This data was taken from Kaggle and does come with some documentation.
-2. Open it in Microsoft Excel
+1. Go through any write-up about the data. This data was taken from Kaggle and does come with some documentation. Please go through the [data card](https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews) to understand the files and the data structures of the files.
+2. Open it in Microsoft Excel. Often overlooked but one of the fastest ways to take a look at the data. Excel has a lot of functions like "Filters" which can give us a quick overview and counts of the data.
 3. Using the [Pandas](https://pandas.pydata.org/docs/user_guide/index.html) "head" function to look at a sample set of data
   
       ![](https://github.com/premthomas/retail_analytics/blob/c9810208378b5ad81ff7ca8d8d82dc0c4d45a00d/EDA/head.JPG)
@@ -71,8 +71,15 @@ Unlike other heatmaps, you notice that correlations are represented not only by 
 
 SweetViz understands the different types of data and uses different algorithms based on the type of variables it is comparing. By using the uncertainty coefficient, it compares categorical values and shows their relationship. For example, we see that there is a relationship between the variables "rating" and "is_recommended".
 
-"rating" is a field that contains integer values between 1 and 5. 5 represents a high rating. 1 represents a low rating. 
-"is_recommended" is a boolean field where 1 represents that the user/reviewer recommends the product. 0 indicates that the user does not recommend the product. At this point, I am not sure if this is a mandatory field when capturing the review.
+What is interesting is that the relationship between "rating" and "is_recommended" is not the same as the relationship between "is_recommended" and "rating". This is asymmetrical. "rating" provides more information about the "is_recommended" field than "is_recommended" does about "rating". To explain this with an example, a review with a rating of 3 might or might not be recommended. But we can say with a high probability that a 5-star rated product would be marked to be recommended.
+
+The other interesting titbit we gathered from the heatmap is the relationship between "helpfulness" and "total_neg_feedback_count". Besides being the only relationship that has a negative correlation (relationships that are inversely correlated), it implies that if the total_neg_feedback_count is high, the helpfulness score is low. Again, obvious if you have read the data card which states that "helpfulness" is a ratio of "total_pos_feedback_count" and "total_neg_feedback_count". 
+
+Let's take a look at a review on the "Sephora" website and compare it with a review on "Amazon".
+
+![](https://github.com/premthomas/retail_analytics/blob/8eb866f0727d4c4174f387d89095b3c82b4b7624/EDA/SweetViz-Associations.JPG)
+
+
 
 
 
