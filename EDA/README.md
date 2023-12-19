@@ -52,4 +52,6 @@ report.show_html(filepath='SweetViz Report.html',
                  scale=None
                  )
 ```
-You can find a copy of the report [here]()
+You can download a copy of the report [here](https://github.com/premthomas/retail_analytics/blob/f1652ae6a589a077157e69ffdbe8e2c521f0522b/EDA/SweetViz%20Report.html). But lets do through some of the interesting bits.
+
+
