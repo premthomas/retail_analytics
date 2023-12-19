@@ -87,7 +87,7 @@ Let's take a look at a review on the "Sephora" website and compare it with a rev
 
 What is common is that both websites want an understanding of a particular review that was considered "helpful". The difference is that "Sephora" allows unverified users to give their input.
 
-![]()
+![](https://github.com/premthomas/retail_analytics/blob/9a3cfc6af73410c91b58fd4e8f69288e3f13a675/EDA/sephora-review-example3.JPG)
 
 On Amazon, I am allowed to mark a review as "Helpful" but otherwise I am allowed to "Report" the review and provide an optional reason for the report. 
 
