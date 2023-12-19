@@ -1,12 +1,13 @@
 # Exploratory Data Analysis (EDA)
 You must understand the data before you start exploring it. I am skipping the details in the more obvious methods but will highlight them as a reminder of the functions that need to be done before exploring the data using Python. The data we will be working with is presented to us in the CSV format. 
 
-1. Open it in Microsoft Excel
-2. Using the [Pandas](https://pandas.pydata.org/docs/user_guide/index.html) "head" function to look at a sample set of data
+1. Go through any write-up about the data. This data was taken from Kaggle and does come with some documentation.
+2. Open it in Microsoft Excel
+3. Using the [Pandas](https://pandas.pydata.org/docs/user_guide/index.html) "head" function to look at a sample set of data
   
       ![](https://github.com/premthomas/retail_analytics/blob/c9810208378b5ad81ff7ca8d8d82dc0c4d45a00d/EDA/head.JPG)
    
-3. Using the "dtypes" method in Pandas to understand how Pandas has understood the data and the data types. Note that the column "submission_time" is a date-time object. 
+4. Using the "dtypes" method in Pandas to understand how Pandas has understood the data and the data types. Note that the column "submission_time" is a date-time object. 
 
       ![](https://github.com/premthomas/retail_analytics/blob/1683e0c0fc9dddeec38ddc94e26ce932da7b99b8/EDA/dtypes.JPG)
 
@@ -17,7 +18,7 @@ You must understand the data before you start exploring it. I am skipping the de
 
       ![](https://github.com/premthomas/retail_analytics/blob/24386f00a11de4b337f41ad0cbf74a7db3d6381f/EDA/dtypes-after.JPG)
    
-4. Using the "describe" function in Pandas, to understand the data
+5. Using the "describe" function in Pandas, to understand the data
 
       ![](https://github.com/premthomas/retail_analytics/blob/5f1149bff859851a0f6379d09ef4b8dae085b8c9/EDA/describe.JPG)
 
@@ -53,7 +54,26 @@ report.show_html(filepath='SweetViz Report.html',
                  )
 ```
 You can download a copy of the report [here](https://github.com/premthomas/retail_analytics/blob/f1652ae6a589a077157e69ffdbe8e2c521f0522b/EDA/SweetViz%20Report.html). But let's do through some of the interesting bits.
-![]()
+
+Correlations can be done with a simple Python statement.
+
+```
+df.corr()
+```
+
+BUT, it is important to understand that correlations can be done with numeric (continuous) variables. Comparing correlations for categorical variables can be a little different. For a deeper understanding, I recommend the following article on [Medium](https://medium.com/@outside2SDs/an-overview-of-correlation-measures-between-categorical-and-continuous-variables-4c7f85610365) by [Outside Two Standard Deviations](https://medium.com/@outside2SDs)
+
+This is where we see an interesting outlook of the data by SweetViz
+
+![](https://github.com/premthomas/retail_analytics/blob/8eb866f0727d4c4174f387d89095b3c82b4b7624/EDA/SweetViz-Associations.JPG)
+
+Unlike other heatmaps, you notice that correlations are represented not only by the size and color of the object but also a shape.
+
+SweetViz understands the different types of data and uses different algorithms based on the type of variables it is comparing. By using the uncertainty coefficient, it compares categorical values and shows their relationship. For example, we see that there is a relationship between the variables "rating" and "is_recommended".
+
+"rating" is a field that contains integer values between 1 and 5. 5 represents a high rating. 1 represents a low rating. 
+"is_recommended" is a boolean field where 1 represents that the user/reviewer recommends the product. 0 indicates that the user does not recommend the product. At this point, I am not sure if this is a mandatory field when capturing the review.
+
 
 
 
