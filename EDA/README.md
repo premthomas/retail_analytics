@@ -7,9 +7,9 @@ You must understand the data before you start exploring it. I am skipping the de
    
    ![](https://github.com/premthomas/retail_analytics/blob/c9810208378b5ad81ff7ca8d8d82dc0c4d45a00d/EDA/head.JPG)
    
-4. Within the Pandas library, using the "dtypes" method to understand how Pandas has understood the data and the data types
+4. Within the Pandas library, use the "dtypes" method to understand how Pandas has understood the data and the data types. Note that the column "submission_time" is a date-time object. Using the "astype" function, we can convert specific columns to the correct data types. 
 
-   ![](https://github.com/premthomas/retail_analytics/blob/c9810208378b5ad81ff7ca8d8d82dc0c4d45a00d/EDA/head.JPG)
+   ![](https://github.com/premthomas/retail_analytics/blob/1683e0c0fc9dddeec38ddc94e26ce932da7b99b8/EDA/dtypes.JPG)
    
 5. Using the "describe" function, to understand the data
 
