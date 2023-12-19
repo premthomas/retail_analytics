@@ -3,11 +3,19 @@ You must understand the data before you start exploring it. I am skipping the de
 
 1. Go through any write-up about the data. This data was taken from Kaggle and does come with some documentation. Please go through the [data card](https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews) to understand the files and the data structures of the files.
 2. Open it in Microsoft Excel. Often overlooked but one of the fastest ways to take a look at the data. Excel has a lot of functions like "Filters" which can give us a quick overview and counts of the data.
-3. Using the [Pandas](https://pandas.pydata.org/docs/user_guide/index.html) "head" function to look at a sample set of data
+3. Use the DataFrame.shape function. This gives you the total number of records and columns in the DataFrame
+  ```
+  print(f'The shape of the dataframe is: {df.shape}')
+  print(f'The number of records in the dataframe: {df.shape[0]}')
+  print(f'The number of columns in the dataframe: {df.shape[1]}')
+  ```
+  ![]()
+   
+5. Using the [Pandas](https://pandas.pydata.org/docs/user_guide/index.html) "head" function to look at a sample set of data
   
       ![](https://github.com/premthomas/retail_analytics/blob/c9810208378b5ad81ff7ca8d8d82dc0c4d45a00d/EDA/head.JPG)
    
-4. Using the "dtypes" method in Pandas to understand how Pandas has understood the data and the data types. Note that the column "submission_time" is a date-time object. 
+6. Using the "dtypes" method in Pandas to understand how Pandas has understood the data and the data types. Note that the column "submission_time" is a date-time object. 
 
       ![](https://github.com/premthomas/retail_analytics/blob/1683e0c0fc9dddeec38ddc94e26ce932da7b99b8/EDA/dtypes.JPG)
 
@@ -18,7 +26,7 @@ You must understand the data before you start exploring it. I am skipping the de
 
       ![](https://github.com/premthomas/retail_analytics/blob/24386f00a11de4b337f41ad0cbf74a7db3d6381f/EDA/dtypes-after.JPG)
    
-5. Using the "describe" function in Pandas, to understand the data
+7. Using the "describe" function in Pandas, to understand the data
 
       ![](https://github.com/premthomas/retail_analytics/blob/5f1149bff859851a0f6379d09ef4b8dae085b8c9/EDA/describe.JPG)
 
@@ -96,6 +104,22 @@ On Amazon, I am allowed to mark a review as "Helpful" but otherwise I am allowed
 I believe that the "Amazon" design of collecting information on the "helpfulness" of a review is more robust compared to the "Sephora" design, which allows bad actors to push down reviews by marking them as "unhelpful". Considering "Sephora" does host a large collection of brands, a competitor might take advantage of this design flaw.
 
 I might try and analyze this further to see if there is any evidence of review tampering. 
+
+The next type of output coming from the SweetViz report is the variable-level analysis. Here is an example of the "ratings" field available in the data
+
+![](https://github.com/premthomas/retail_analytics/blob/0b96abdc8ac2573e485262867e6e1a24a4b5a15a/EDA/SweetViz-Variable.JPG)
+
+We see information such as 
+  * The total number of values in the column
+  * The total number of values that are missing
+  * The number of distinct values
+  * and The distribution of the values
+
+Analysis at this level is important to understand the type of data, the distribution, and the amount of data that is missing. A large number of missing values which we cannot fill with default values, might not be useful for regression models. 
+
+Outliers are another interesting bit of information we can get about some variables. For example, the average number of total_pos_feedback_count is 3. At 95%, it is 13. The max is a staggering 3481! We need to take a closer look at the graphs for both the "total_pos_feedback_count" and "total_neg_feedback_count" columns. 
+
+
 
 
 
