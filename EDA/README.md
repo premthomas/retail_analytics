@@ -15,6 +15,7 @@ You must understand the data before you start exploring it. I am skipping the de
 
 <b>After:</b>
 
+![](https://github.com/premthomas/retail_analytics/blob/24386f00a11de4b337f41ad0cbf74a7db3d6381f/EDA/dtypes-after.JPG)
    
 6. Using the "describe" function, to understand the data
 
