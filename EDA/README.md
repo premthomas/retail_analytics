@@ -9,7 +9,7 @@ You must understand the data before you start exploring it. I am skipping the de
   print(f'The number of records in the dataframe: {df.shape[0]}')
   print(f'The number of columns in the dataframe: {df.shape[1]}')
   ```
-  ![]()
+  ![](https://github.com/premthomas/retail_analytics/blob/cf64d6e36bbebc6f321d4a56f7045945dde28b5b/EDA/shape.JPG)
    
 5. Using the [Pandas](https://pandas.pydata.org/docs/user_guide/index.html) "head" function to look at a sample set of data
   
@@ -51,7 +51,6 @@ df['author_id'] = df['author_id'].astype(str)
 Upon correction of the data, execute the code below at it creates an HTML report. 
 
 ```
-# SweetViz
 import sweetviz as sv
 
 report = sv.analyze(df)
@@ -118,6 +117,13 @@ We see information such as
 Analysis at this level is important to understand the type of data, the distribution, and the amount of data that is missing. A large number of missing values which we cannot fill with default values, might not be useful for regression models. 
 
 Outliers are another interesting bit of information we can get about some variables. For example, the average number of total_pos_feedback_count is 3. At 95%, it is 13. The max is a staggering 3481! We need to take a closer look at the graphs for both the "total_pos_feedback_count" and "total_neg_feedback_count" columns. 
+
+## Sketch
+A brilliant tool that is AI-backed to help understand the context of the data and provide suggestions. 
+
+
+## Conclusion
+I am interested in understanding what makes a review "helpful" or "not helpful". There are about 16,000 reviews that are greater than 2 standard deviations away from the mean that might provide us with either indications or key phrases that are important. OR we might be able to understand if there is some foul play in these numbers. 
 
 
 
