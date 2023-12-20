@@ -145,11 +145,17 @@ For example, 'Fetch the total number of records that have the "submission_time" 
 
 But ask it to generate code to do this and it works!
 
+<b>Asking a howto question and getting a response</b>
+
 ![](https://github.com/premthomas/retail_analytics/blob/e317d05cead24da8d76adfe81fb440ba600482d1/EDA/sketch2.JPG)
+
+<b>Implementing the response</b>
 
 ![](https://github.com/premthomas/retail_analytics/blob/e985759da64d4a9ccf44984221a9ee3be79b0ee2/EDA/sketch3.JPG)
 
-![]()
+<b>Return from the implemented code</b>
+
+![](https://github.com/premthomas/retail_analytics/blob/355b049a7ba6b4c972a10de90a3294f377e8f2b9/EDA/sketch4.JPG)
 
 ## Conclusion
 I am interested in understanding what makes a review "helpful" or "not helpful". There are about 16,000 reviews that are greater than 2 standard deviations away from the mean that might provide us with either indications or key phrases that are important. OR we might be able to understand if there is some foul play in these numbers. 
