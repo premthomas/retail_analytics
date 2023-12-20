@@ -145,7 +145,7 @@ For example, 'Fetch the total number of records that have the "submission_time" 
 
 But ask it to generate code to do this and it works!
 
-![]()
+![](https://github.com/premthomas/retail_analytics/blob/e317d05cead24da8d76adfe81fb440ba600482d1/EDA/sketch2.JPG)
 
 ![]()
 
