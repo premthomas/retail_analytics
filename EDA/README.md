@@ -147,7 +147,7 @@ But ask it to generate code to do this and it works!
 
 ![](https://github.com/premthomas/retail_analytics/blob/e317d05cead24da8d76adfe81fb440ba600482d1/EDA/sketch2.JPG)
 
-![]()
+![](https://github.com/premthomas/retail_analytics/blob/e985759da64d4a9ccf44984221a9ee3be79b0ee2/EDA/sketch3.JPG)
 
 ![]()
 
