@@ -120,7 +120,36 @@ Outliers are another interesting bit of information we can get about some variab
 
 ## Sketch
 A brilliant tool that is AI-backed to help understand the context of the data and provide suggestions. 
+Here is an example of a question that I asked about the data
 
+![](https://github.com/premthomas/retail_analytics/blob/a7a34ac7b2b6b56dc607575e30627dadfa9f8b64/EDA/sketch1.JPG)
+
+Here is another sample question
+
+<b>Question: </b> Is there a relationship between the "total_neg_feedback_count" and the "helpfulnesss" columns?
+
+<b>Answer: </b> Yes, there is likely a relationship between the "total_neg_feedback_count" and the "helpfulness" columns. The higher the total negative feedback count, the lower the helpfulness rating is likely to be. This suggests that more negative feedback is associated with less helpful reviews.
+
+The code example is as follows
+```
+import sketch
+
+question = 'What does the "helpfulness" column tell us about the data?'
+obj = df.sketch.ask(question, call_display=False)
+print(f'\nQ:{question}')
+print(f'{obj}')
+```
+
+This library cannot be used to directly answer questions about the data. However, it can create code that can help answer the question.
+For example, 'Fetch the total number of records that have the "submission_time" values between "2022-01-01" and "2022-12-31"' does not work
+
+But ask it to generate code to do this and it works!
+
+![]()
+
+![]()
+
+![]()
 
 ## Conclusion
 I am interested in understanding what makes a review "helpful" or "not helpful". There are about 16,000 reviews that are greater than 2 standard deviations away from the mean that might provide us with either indications or key phrases that are important. OR we might be able to understand if there is some foul play in these numbers. 
